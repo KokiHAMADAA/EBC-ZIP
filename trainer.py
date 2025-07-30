@@ -320,24 +320,32 @@ def main():
     # Sliding window prediction will be used if args.sliding_window is True, or when the image size is larger than args.max_input_size
     args.stride = args.stride or args.input_size
 
+    assert args.model_name in ["ebc_p", "ebc_n", "ebc_t", "ebc_s", "ebc_b"], f"Expected model_name to be one of ['ebc_p', 'ebc_n', 'ebc_t', 'ebc_s', 'ebc_b'], got {args.model_name}."
+
     if args.model_name == "ebc_p":  # pico
         args.model_name = "mobilenetv4_conv_small_050"
+
     elif args.model_name == "ebc_n":  # nano
         args.model_name = "mobilenetv4_conv_small"
+
     elif args.model_name == "ebc_t": # tiny
         args.model_name = "mobilenetv4_conv_medium"
+
     elif args.model_name == "ebc_s":
         args.model_name = "CLIP_MobileCLIP_S1"
         args.clip_weight_name = "datacompdr"
-    elif args.model_name == "ebc_b":
-        args.model_name = "CLIP_convnext_base_w_320"
-        args.clip_weight_name = "laion_aesthetic_s13b_b82k_augreg"
-    elif args.model_name == "ebc_l":
-        args.model_name = "CLIP_convnext_large_d_320"
-        args.clip_weight_name = "laion2b_s29b_b131k_ft_soup"
-    # elif args.model_name == "ebc_h":
-    #     args.model_name = "convnext_xxlarge"
-    #     args.clip_weight_name = "laion2b_s34b_b82k_augreg_soup"
+
+    else:  # args.model_name == "ebc_b":
+        if args.dataset == "sha":
+            args.model_name = "CLIP_ViT_B_16"
+            args.clip_weight_name = "openai"
+            args.num_vpt = args.num_vpt or 96
+        elif args.dataset == "shb":
+            args.model_name = "CLIP_RN50x4"
+            args.clip_weight_name = "openai"
+        else:
+            args.model_name = "CLIP_convnext_base_w_320"
+            args.clip_weight_name = "laion_aesthetic_s13b_b82k_augreg"
 
     if "CLIP_" not in args.model_name:
         args.clip_weight_name = None

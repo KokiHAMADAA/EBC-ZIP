@@ -69,3 +69,7 @@ Trained weights are also provided:
 - [**NWPU-Crowd**](https://github.com/Yiming-M/EBC-ZIP/releases/tag/weights_nwpu)
 
 Make sure to use the processed datasets and the exact commands pre-defined in `test.sh` to reproduce the same results.
+
+## Step 5: Visualize the Results
+
+Use the `notebooks/model.ipynb` notebook to visualize the results.

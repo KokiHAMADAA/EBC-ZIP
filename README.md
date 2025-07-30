@@ -5,7 +5,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/ebc-zip-improving-blockwise-crowd-counting/crowd-counting-on-ucf-qnrf)](https://paperswithcode.com/sota/crowd-counting-on-ucf-qnrf?p=ebc-zip-improving-blockwise-crowd-counting)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/ebc-zip-improving-blockwise-crowd-counting/crowd-counting-on-nwpu-crowd-val)](https://paperswithcode.com/sota/crowd-counting-on-nwpu-crowd-val?p=ebc-zip-improving-blockwise-crowd-counting)
 
-The official implementation of the paper [*EBC-ZIP: Improving Blockwise Crowd Counting with Zero-Inflated Poisson Regression*](https://arxiv.org/pdf/2506.19955).
+The official implementation of the paper [*ZIP: Scalable Crowd Counting via Zero-Inflated Poisson Modeling*](https://arxiv.org/pdf/2506.19955).
 
 ## Reults
 

@@ -7,6 +7,8 @@
 
 The official implementation of the paper [*ZIP: Scalable Crowd Counting via Zero-Inflated Poisson Modeling*](https://arxiv.org/pdf/2506.19955).
 
+🤗 Try our models live! Check out the interactive demo on our [HuggingFace Space](https://huggingface.co/spaces/Yiming-M/ZIP).
+
 ## Reults
 
 | **Variants** | **Size (M)** | **GFLOPS (on HD)** | **SHA (MAE)** | **SHA (RMSE)** | **SHA (NAE, %)** | **SHB (MAE)** | **SHB (RMSE)** | **SHB (NAE, %)** | **QNRF (MAE)** | **QNRF (RMSE)** | **QNRF (NAE, %)** |

@@ -5,6 +5,8 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/ebc-zip-improving-blockwise-crowd-counting/crowd-counting-on-ucf-qnrf)](https://paperswithcode.com/sota/crowd-counting-on-ucf-qnrf?p=ebc-zip-improving-blockwise-crowd-counting)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/ebc-zip-improving-blockwise-crowd-counting/crowd-counting-on-nwpu-crowd-val)](https://paperswithcode.com/sota/crowd-counting-on-nwpu-crowd-val?p=ebc-zip-improving-blockwise-crowd-counting)
 
+<a href="https://www.buymeacoffee.com/yiming.ma" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
 The official implementation of the paper [*ZIP: Scalable Crowd Counting via Zero-Inflated Poisson Modeling*](https://arxiv.org/pdf/2506.19955).
 
 🤗 Try our models live! Check out the interactive demo on our [HuggingFace Space](https://huggingface.co/spaces/Yiming-M/ZIP).
